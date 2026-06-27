@@ -1,0 +1,25 @@
+name: MSurvivalAuth
+version: 1.0
+main: pl.msurvival.auth.MSurvivalAuth
+api-version: '1.21'
+author: Milekz
+commands:
+  register:
+    description: Rejestracja konta
+    usage: /register <haslo> <powtorz_haslo>
+    aliases: [reg]
+  login:
+    description: Logowanie do konta
+    usage: /login <haslo>
+    aliases: [l]
+  changepassword:
+    description: Zmiana hasla
+    usage: /changepassword <stare_haslo> <nowe_haslo>
+    aliases: [changepass]
+  authadmin:
+    description: Administracja MSurvivalAuth
+    usage: /authadmin <reload|reset>
+permissions:
+  msurvivalauth.admin:
+    description: Dostep do komend administracyjnych auth
+    default: op

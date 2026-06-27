@@ -1,0 +1,61 @@
+settings:
+  login-time-seconds: 60
+  min-password-length: 4
+  max-password-length: 32
+  block-movement: true
+  block-chat: true
+  block-commands: true
+  block-interactions: true
+  allowed-commands:
+    - login
+    - l
+    - register
+    - reg
+  use-title: true
+  use-sound: true
+  sound-success: ENTITY_PLAYER_LEVELUP
+  sound-error: ENTITY_VILLAGER_NO
+
+messages:
+  prefix: '&6&lMSurvivalAuth &8» &r'
+  only-player: '&cTa komenda jest tylko dla gracza.'
+  no-permission: '&cNie masz uprawnień.'
+  reload: '&aPrzeładowano konfigurację pluginu.'
+  not-registered-join:
+    - '&6✦ &e&lMSURVIVAL AUTH &6✦'
+    - '&7Nie masz jeszcze konta.'
+    - '&eZarejestruj się: &6/register <hasło> <powtórz_hasło>'
+  registered-join:
+    - '&6✦ &e&lMSURVIVAL AUTH &6✦'
+    - '&7Twoje konto jest zarejestrowane.'
+    - '&eZaloguj się: &6/login <hasło>'
+  register-usage: '&cUżycie: /register <hasło> <powtórz_hasło>'
+  login-usage: '&cUżycie: /login <hasło>'
+  changepassword-usage: '&cUżycie: /changepassword <stare_hasło> <nowe_hasło>'
+  already-registered: '&cMasz już konto. Użyj /login <hasło>.'
+  already-logged: '&aJesteś już zalogowany.'
+  not-registered: '&cNie masz konta. Użyj /register <hasło> <powtórz_hasło>.'
+  passwords-not-same: '&cHasła nie są takie same.'
+  password-too-short: '&cHasło jest za krótkie. Minimum: %min% znaki.'
+  password-too-long: '&cHasło jest za długie. Maksimum: %max% znaków.'
+  registered-success: '&aZarejestrowano pomyślnie! Jesteś zalogowany.'
+  login-success: '&aZalogowano pomyślnie. Miłej gry!'
+  wrong-password: '&cNiepoprawne hasło.'
+  must-login: '&cNajpierw się zaloguj: /login <hasło>'
+  must-register: '&cNajpierw się zarejestruj: /register <hasło> <powtórz_hasło>'
+  command-blocked: '&cNajpierw się zaloguj, aby używać komend.'
+  chat-blocked: '&cNajpierw się zaloguj, aby pisać na czacie.'
+  movement-blocked: '&cNajpierw się zaloguj.'
+  kicked-timeout: '&cCzas na logowanie minął. Wejdź ponownie i zaloguj się.'
+  password-changed: '&aHasło zostało zmienione.'
+  reset-usage: '&cUżycie: /authadmin reset <nick>'
+  reset-success: '&aZresetowano konto gracza &e%player%&a.'
+  reset-not-found: '&cTen gracz nie ma konta.'
+
+titles:
+  login-title: '&6&lMSURVIVAL'
+  login-subtitle: '&eZaloguj się: /login <hasło>'
+  register-title: '&6&lMSURVIVAL'
+  register-subtitle: '&eZarejestruj się: /register <hasło> <hasło>'
+  success-title: '&a&lZALOGOWANO'
+  success-subtitle: '&7Miłej gry na serwerze!'
